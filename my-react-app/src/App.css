@@ -1,0 +1,48 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.container{
+  display: grid;
+  width: 1200px;
+  height: 500px;
+  grid-template-columns: 200px auto;
+  border: solid 2px rgb(230,230,230);
+  border-radius: 2px;
+}
+
+.buttonGroup{
+  width: 140px;
+  height: 500px;
+  background-color:#fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.tableWindow{
+  /* background-color:#aaa; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttonDrawer{
+  flex:1 1 auto;
+  display: flex;
+  align-items: center;
+}
+.arco-btn{
+  width: 100px !important;
+  height: 40px !important;
+
+}
+
+.arco-table{
+  width: 1000px;
+}
