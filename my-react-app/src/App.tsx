@@ -48,6 +48,7 @@ function App() {
   
   return (
     <div className="App">
+      <div className='title'>基于集成学习的城市反恐应急因子智能筛选系统</div>
       <div className='container'>
         <div className='buttonGroup'> 
             <div className='buttonDrawer'><Button>运行筛选</Button></div>

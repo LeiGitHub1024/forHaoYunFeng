@@ -5,7 +5,10 @@
   text-align: center;
 }
 
-
+.title{
+  font-size: 3em;
+  margin:30px;
+}
 .container{
   display: grid;
   width: 1200px;
