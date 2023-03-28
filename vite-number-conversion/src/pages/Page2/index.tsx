@@ -332,12 +332,17 @@ const Page2 = (props: {}) => {
     {
       title: "操作",
       dataIndex: "op",
-      width: 120,
+      width: 200,
       fixed: 'right',
       render: (_:any, record:any) => (
-        <Button onClick={() => removeRow(record.key)} type='primary' status='danger'>
-          Delete
-        </Button>
+        <div>
+          <Button onClick={() => removeRow(record.key)} type='primary' status='default' size="mini">
+            修改
+          </Button>
+          <Button onClick={() => removeRow(record.key)} style={{marginLeft:12}} type='primary' status='danger' size="mini">
+            删除
+          </Button>
+        </div>
       ),
     },
   ];
