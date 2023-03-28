@@ -3,77 +3,84 @@ import { Table, TableColumnProps } from "@arco-design/web-react";
 import Pie from "./pie";
 const columns: TableColumnProps[] = [
   {
-    title: "Name",
-    dataIndex: "name",
+    title: "序号",
+    dataIndex: "number",
   },
   {
-    title: "Salary",
-    dataIndex: "salary",
+    title: "综合评分",
+    dataIndex: "score",
   },
 ];
 const data = [
   {
     key: "1",
-    name: "Jane Doe",
-    salary: 23000,
-    address: "32 Park Road, London",
-    email: "jane.doe@example.com",
+    number: 1,
+    score: 0.1995
   },
   {
     key: "2",
-    name: "Alisa Ross",
-    salary: 25000,
-    address: "35 Park Road, London",
-    email: "alisa.ross@example.com",
+    number: 2,
+    score: 0.1995
   },
   {
     key: "3",
-    name: "Kevin Sandra",
-    salary: 22000,
-    address: "31 Park Road, London",
-    email: "kevin.sandra@example.com",
+    number: 3,
+    score: 0.0579
   },
   {
     key: "4",
-    name: "Ed Hellen",
-    salary: 17000,
-    address: "42 Park Road, London",
-    email: "ed.hellen@example.com",
+    number: 4,
+    score: 0.0551
   },
   {
     key: "5",
-    name: "William Smith",
-    salary: 27000,
-    address: "62 Park Road, London",
-    email: "william.smith@example.com",
+    number: 5,
+    score: 0.0517
   },
   {
     key: "6",
-    name: "William Smith",
-    salary: 27000,
-    address: "62 Park Road, London",
-    email: "william.smith@example.com",
+    number: 6,
+    score: 0.0615 
   },
   {
     key: "7",
-    name: "William Smith",
-    salary: 27000,
-    address: "62 Park Road, London",
-    email: "william.smith@example.com",
+    number: 7,
+    score: 0.1547
   },
   {
     key: "8",
-    name: "William Smith",
-    salary: 27000,
-    address: "62 Park Road, London",
-    email: "william.smith@example.com",
+    number: 8,
+    score: 0.9521
   },
   {
     key: "9",
-    name: "William Smith",
-    salary: 27000,
-    address: "62 Park Road, London",
-    email: "william.smith@example.com",
+    number: 9,
+    score: 0.6205
+  },
+  {
+    key: "10",
+    number: 10,
+    score: 0.4005
+  },
+  {
+    key: "11",
+    number: 11,
+    score: 0.2006
+  },
+  {
+    key: "12",
+    number: 12,
+    score: 0.1039
+  },
+  {
+    key: "13",
+    number: 13,
+    score: 0.7039
+  },
+  {
+    key: "14",
+    number: 14,
+    score: 0.5039
   },
 ];
 // import style from'./style.module.less'
@@ -89,7 +96,7 @@ const Page4 = (props: {}) => {
           style={{ width: "40%", margin: 20 }}
         />
         <div style={{ width: "8%" }}></div>
-        <div style={{ width: "40%", margin: 20 }}>
+        <div style={{ width: "40%", margin: 20, paddingTop:50 }}>
           <Pie />
         </div>
       </div>

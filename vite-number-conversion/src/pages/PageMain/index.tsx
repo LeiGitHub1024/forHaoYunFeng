@@ -63,7 +63,7 @@ const pageMain = (props:{})=>{
       trigger={collapsed ? <IconCaretRight /> : <IconCaretLeft />}
       breakpoint='xl'
     >
-      <div className='logo' />
+      <div className='logo' ></div>
       <Menu
         defaultOpenKeys={['1']}
         defaultSelectedKeys={['0_1']}
@@ -107,7 +107,7 @@ const pageMain = (props:{})=>{
           {title2!==''&& <Breadcrumb.Item>{title2}</Breadcrumb.Item>}
         </Breadcrumb>
         <Content>{subPage}</Content>
-        <Footer>京ICP备1905150x号</Footer>
+        <Footer></Footer>
       </Layout>
     </Layout>
   </Layout>

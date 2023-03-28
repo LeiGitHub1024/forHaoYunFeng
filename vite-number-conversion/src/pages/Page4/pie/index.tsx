@@ -9,16 +9,26 @@ const Pie = (props: {}) => {
     const myChart = echarts.init(chartRef.current!);
     var option = {
       title: {
-        text: 'Referer of a Website',
-        subtext: 'Fake Data',
-        left: 'center'
+        text: '综合评分饼状图',
+        subtext: 'TopSis方法',
+        subtextStyle: {
+          color: '#ccc',
+          fontSize: 14
+        },
+        left: 'center',
+        textStyle: {
+          color: '#ccc'
+        }
       },
       tooltip: {
-        trigger: 'item'
+        trigger: 'item',
       },
       legend: {
         orient: 'vertical',
-        left: 'left'
+        left: 'right',
+        textStyle: {
+          color: '#ccc'
+        }
       },
       series: [
         {
@@ -26,11 +36,10 @@ const Pie = (props: {}) => {
           type: 'pie',
           radius: '50%',
           data: [
-            { value: 1048, name: 'Search Engine' },
-            { value: 735, name: 'Direct' },
-            { value: 580, name: 'Email' },
-            { value: 484, name: 'Union Ads' },
-            { value: 300, name: 'Video Ads' }
+            { value: 8, name: '0.00-0.25' },
+            { value: 1, name: '0.25-0.50' },
+            { value: 3, name: '0.50-0.75' },
+            { value: 2, name: '0.75-1.00' }
           ],
           emphasis: {
             itemStyle: {
@@ -38,17 +47,19 @@ const Pie = (props: {}) => {
               shadowOffsetX: 0,
               shadowColor: 'rgba(0, 0, 0, 0.5)'
             }
-          }
+          },
+          label: {
+            textStyle: {
+              color: '#ccc',
+            }
+          },
         }
       ]
     };
     myChart.setOption(option);
     myChart.resize({ height: 550 });
 
-    // 组件卸载时销毁ECharts实例
-    // return () => {
-    //   myChart.dispose();
-    // };
+
   }, []);
   return (
     <>

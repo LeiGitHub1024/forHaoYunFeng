@@ -10,14 +10,22 @@ const Bar = (props: {}) => {
     const option = {
       xAxis: {
         type: "category",
-        data: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        data: ["极大型指标", "极小型指标"],
+        axisLabel: {
+          color: "#ccc", // set the color to white
+          fontSize: 16, // set the font size to 16px
+        },
       },
       yAxis: {
         type: "value",
+        axisLabel: {
+          color: "#ccc", // set the color to white
+          fontSize: 16, // set the font size to 16px
+        },
       },
       series: [
         {
-          data: [120, 200, 150, 80, 70, 110, 130],
+          data: [3,5],
           type: "bar",
           showBackground: true,
           backgroundStyle: {

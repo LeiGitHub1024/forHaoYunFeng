@@ -21,5 +21,9 @@
     "@vitejs/plugin-react": "^3.1.0",
     "typescript": "^4.9.3",
     "vite": "^4.2.0"
-  }
+  },
+  "description": "npm init vite@latest vite-number-conversion -- --template react-ts cd vite-number-conversion npm init npm run dev",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }

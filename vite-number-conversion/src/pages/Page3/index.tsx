@@ -3,78 +3,56 @@ import { Table, TableColumnProps } from "@arco-design/web-react";
 import Bar from "./bar";
 const columns: TableColumnProps[] = [
   {
-    title: "Name",
+    title: "指标名称",
     dataIndex: "name",
   },
   {
-    title: "Salary",
-    dataIndex: "salary",
+    title: "指标类别",
+    dataIndex: "category",
   },
 ];
 const data = [
   {
     key: "1",
-    name: "Jane Doe",
-    salary: 23000,
-    address: "32 Park Road, London",
-    email: "jane.doe@example.com",
+    name: "非武警部队与恐怖分子人员伤亡数",
+    category: "极大型指标",
   },
   {
     key: "2",
-    name: "Alisa Ross",
-    salary: 25000,
-    address: "35 Park Road, London",
-    email: "alisa.ross@example.com",
+    name: "普通市民伤亡数",
+    category: "极小型指标",
   },
   {
     key: "3",
-    name: "Kevin Sandra",
-    salary: 22000,
-    address: "31 Park Road, London",
-    email: "kevin.sandra@example.com",
+    name: "普通看热闹的旁观者伤亡数",
+    category: "极小型指标",
   },
   {
     key: "4",
-    name: "Ed Hellen",
-    salary: 17000,
-    address: "42 Park Road, London",
-    email: "ed.hellen@example.com",
+    name: "政客旁观者伤亡数",
+    category: "极小型指标",
   },
   {
     key: "5",
-    name: "William Smith",
-    salary: 27000,
-    address: "62 Park Road, London",
-    email: "william.smith@example.com",
+    name: "乱哄哄的拥挤的旁观者伤亡数",
+    category: "极小型指标",
   },
   {
     key: "6",
-    name: "William Smith",
-    salary: 27000,
-    address: "62 Park Road, London",
-    email: "william.smith@example.com",
+    name: "武警部队伤亡数",
+    category: "极小型指标",
   },
   {
     key: "7",
-    name: "William Smith",
-    salary: 27000,
-    address: "62 Park Road, London",
-    email: "william.smith@example.com",
+    name: "Terrorist AK74实体伤亡",
+    category: "极大型指标",
   },
   {
     key: "8",
-    name: "William Smith",
-    salary: 27000,
-    address: "62 Park Road, London",
-    email: "william.smith@example.com",
+    name: "Terrorist RPG实体伤亡",
+    category: "极大型指标",
   },
-  {
-    key: "9",
-    name: "William Smith",
-    salary: 27000,
-    address: "62 Park Road, London",
-    email: "william.smith@example.com",
-  },
+  
 ];
 // import style from'./style.module.less'
 const Page3 = (props: {}) => {

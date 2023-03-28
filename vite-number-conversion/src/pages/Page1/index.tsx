@@ -6,7 +6,7 @@ const Page1 = (props:{})=>{
 const {} = props
 
     return(<>
-      1
+      
     </>)
 }
 export default Page1;
