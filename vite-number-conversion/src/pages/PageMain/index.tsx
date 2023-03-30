@@ -70,7 +70,7 @@ const pageMain = (props:{})=>{
         onClickMenuItem={(key) =>
           changeContent(key)
         }
-        style={{ width: '100%' }}
+        style={{ width: '100%',fontSize:'20px' }}
       >
         <MenuItem key='0_1' >
           <IconHome />
@@ -101,7 +101,7 @@ const pageMain = (props:{})=>{
     <Layout>
       <Header style={{ paddingLeft: 30, fontSize:30 }}>城市反恐应急因子筛选系统</Header>
       <Layout style={{ padding: '0 24px' }}>
-        <Breadcrumb style={{ margin: '16px 0' }}>
+        <Breadcrumb style={{ margin: '16px 0', fontSize:18 }}>
           <Breadcrumb.Item>首页</Breadcrumb.Item>
           <Breadcrumb.Item>{title1}</Breadcrumb.Item>
           {title2!==''&& <Breadcrumb.Item>{title2}</Breadcrumb.Item>}

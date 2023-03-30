@@ -41,6 +41,7 @@ const data = [
     important: "AGL武器数量",
     value: 0.1061,
   },
+
 ];
 
 const columns1: TableColumnProps[] = [
@@ -114,6 +115,8 @@ const data1 = [
     unimportant: "装甲车单元",
     value: 0.0261,
   },
+  {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},    {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},
+
 ];
 // import style from'./style.module.less'
 const Page5 = (props: {}) => {

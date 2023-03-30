@@ -60,13 +60,13 @@ const Page3 = (props: {}) => {
 
   return (
     <>
-      <div style={{ display: "flex", alignItems: "center" }}>
+      <div style={{ display: "flex", alignItems: "center" , justifyContent:'center'}}>
         <Table
           columns={columns}
           data={data}
           style={{ width: "40%", margin: 20 }}
         />
-        <div style={{ width: "8%" }}></div>
+        <div style={{ width: "6%" }}></div>
         <div style={{ width: "40%", margin: 20 }}>
           <Bar />
         </div>
